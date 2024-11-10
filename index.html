@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="img/logo/logo.png" type="image/x-icon">
+   <link rel="stylesheet" href="css/store.css">
+   <title>Tasty Pastil - Головна</title>
+</head>
+<body background="img/bg/image-cm64qvvv.png">
+   <header>
+      <div class="logo">
+         <a href="index.html"><img src="img/logo/logo.png" alt="Логотип" width="70px"></a>
+        </div>
+        <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+        <nav id="mobileMenu">
+         <ul>
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="products.html">Товари</a></li>
+            <li><a href="contacts.html">Контакти</a></li>
+            <li><a href="cart.html">Кошик</a></li>
+         </ul>
+        </nav>
+   </header>
+   <section class="hero">
+        <div class="hero-text">
+            <h2>Натуральна пастила для всієї родини!</h2>
+            <p>Смачні та корисні ласощі без цукру та консервантів.</p>
+            <a href="products.html" class="button-link">Переглянути товари</a>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Інтернет-магазин Пастили.</p>
+    </footer>
+    <script>
+      function toggleMenu() {
+    const menu = document.getElementById('mobileMenu');
+    menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+}
+    </script>
+</body>
+</html>

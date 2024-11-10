@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/logo/logo.png" type="image/x-icon">
+    <title>Tasty Pastil - Пастила букет</title>
+    <link rel="stylesheet" href="../css/css-products/product4.css">
+    <script src="../js/carousel.js" defer></script>
+    <script src="../js/cart.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+         <a href="../index.html"><img src="../img/logo/logo.png" alt="Логотип" width="70px"></a>
+        </div>
+        <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+        <nav id="mobileMenu">
+            <ul>
+               <li><a href="../index.html">Головна</a></li>
+               <li><a href="../products.html">Товари</a></li>
+               <li><a href="../contacts.html">Контакти</a></li>
+               <li><a href="../cart.html">Кошик</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="product-detail">
+        <h2>Пастила у вигляді букета</h2>
+        <div class="carousel">
+            <img src="../img/products/flowers/flower1.webp" alt="Пастила у вигляді букета" class="carousel-image active">
+            <img src="../img/products/flowers/flower2.webp" alt="Пастила у вигляді букета 2" class="carousel-image">
+            <img src="../img/products/flowers/flower3.webp" alt="Пастила у вигляді букета 3" class="carousel-image">
+            <button class="carousel-btn prev" onclick="prevSlide()">&#10094;</button>
+            <button class="carousel-btn next" onclick="nextSlide()">&#10095;</button>
+        </div>
+        <p>Ціна: 350 грн</p>
+        <p>Чудовий варіант для подарка.</p>
+        <a href="../cart.html" class="button" onclick="addToCart('Пастила у вигляді букета', 350, 'img/products/flowers/flower1.webp');">Додати до кошика</a>
+        <a href="../products.html" class="button">Назад до товарів</a>
+    </section>
+    <footer>
+        <p>&copy; Інтернет-магазин Пастили.</p>
+    </footer>
+    <script>
+      function toggleMenu() {
+    const menu = document.getElementById('mobileMenu');
+    menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+}
+    </script>
+</body>
+</html>

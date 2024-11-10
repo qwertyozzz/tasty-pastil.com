@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasty Pastil - Кошик</title>
+    <link rel="stylesheet" href="css/cart.css">
+    <script src="js/cart.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+         <a href="index.html"><img src="img/logo/logo.png" alt="Логотип" width="70px"></a>
+        </div>
+        <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+        <nav id="mobileMenu">
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="products.html">Товари</a></li>
+                <li><a href="contacts.html">Контакти</a></li>
+                <li><a href="cart.html">Кошик</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="cart">
+        <h2>Ваш кошик</h2>
+        <div id="cart-items"></div>
+        <div id="cart-total"></div>
+        <button class="button" onclick="clearCart()">Очистити кошик</button>
+        <a href="checkout.html" class="button-link">Оформити замовлення</a>
+    </section>
+    <footer>
+        <p>&copy; Інтернет-магазин Пастили.</p>
+    </footer>
+    <script>
+      function toggleMenu() {
+    const menu = document.getElementById('mobileMenu');
+    menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+}
+    </script>
+</body>
+</html>
