@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/logo/logo.png" type="image/x-icon">
+    <title>Tasty Pastil - Пастила в упаковці - 5 шт.</title>
+    <link rel="stylesheet" href="../css/css-products/products.css">
+    <script src="../js/carousel.js" defer></script>
+    <script src="../js/cart.js" defer></script>
+</head>
+<body>
+   <header>
+      <div class="logo">
+         <a href="../index.html"><img src="../img/logo/logo.png" alt="Логотип" width="70px"></a>
+        </div>
+        <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+        <nav id="mobileMenu">
+         <ul>
+            <li><a href="../index.html">Головна</a></li>
+            <li><a href="../contacts.html">Контакти</a></li>
+            <li><a href="../cart.html">Кошик</a></li>
+         </ul>
+        </nav>
+        <ul class="network">
+            <li><a href="https://www.facebook.com/profile.php?id=100005388401291" target="_blank"><img src="../img/logo/facebook-48px.png" alt="Facebook"></a></li>
+            <li><a href="https://www.instagram.com/sabirova2502/" target="_blank"><img src="../img/logo/instagram-48px.png" alt="Instagram"></a></li>
+        </ul>
+   </header>
+    <section class="product-detail">
+        <h2>Пастила в зручній упаковці - 5 шт.</h2>
+        <div class="carousel">
+            <img src="../img/products/packets/packet_1.jpg" alt="Пастила в упоковкі" class="carousel-image active">
+            <img src="../img/products/packets/packet_2.jpg" alt="Пастила в упоковкі 2" class="carousel-image">
+            <img src="../img/products/packets/packet_3.jpg" alt="Пастила в упоковкі 3" class="carousel-image">
+            <button class="carousel-btn prev" onclick="prevSlide()">&#10094;</button>
+            <button class="carousel-btn next" onclick="nextSlide()">&#10095;</button>
+        </div>
+        <h3>Ціна: 60 грн</h3>
+        <p>Полунична пастила зберігає всі корисні властивості свіжих ягід, не містить цукру і штучних консервантів.</p>
+        <p>В одній упаковці – 5 цукерок.</p>
+        <a href="../cart.html" class="button" onclick="addToCart('Пастила в зручній упаковці - 5 шт.', 60, 'img/products/packets/packet_1.jpg');">Додати до кошика</a>
+        <a href="../index.html" class="button">Назад до товарів</a>
+    </section>
+    <footer>
+        <p>&copy; Інтернет-магазин Пастили.</p>
+    </footer>
+    <script>
+      function toggleMenu() {
+    const menu = document.getElementById('mobileMenu');
+    menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+}
+    </script>
+</body>
+</html>

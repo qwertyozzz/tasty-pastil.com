@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/logo/logo.png" type="image/x-icon">
+    <title>Tasty Pastil - Набір пастили S - 6 сек.</title>
+    <link rel="stylesheet" href="../css/css-products/products.css">
+    <script src="../js/carousel.js" defer></script>
+    <script src="../js/cart.js" defer></script>
+</head>
+<body>
+   <header>
+      <div class="logo">
+         <a href="../index.html"><img src="../img/logo/logo.png" alt="Логотип" width="70px"></a>
+        </div>
+        <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+        <nav id="mobileMenu">
+         <ul>
+            <li><a href="../index.html">Головна</a></li>
+            <li><a href="../contacts.html">Контакти</a></li>
+            <li><a href="../cart.html">Кошик</a></li>
+         </ul>
+        </nav>
+        <ul class="network">
+            <li><a href="https://www.facebook.com/profile.php?id=100005388401291" target="_blank"><img src="../img/logo/facebook-48px.png" alt="Facebook"></a></li>
+            <li><a href="https://www.instagram.com/sabirova2502/" target="_blank"><img src="../img/logo/instagram-48px.png" alt="Instagram"></a></li>
+        </ul>
+   </header>
+    <section class="product-detail">
+        <h2>Набір пастили S - 6 сек.</h2>
+        <div class="carousel">
+           <img src="../img/products/box/box_3_6.jpg" alt="Набір пастили 3" class="carousel-image active">
+            <img src="../img/products/box/box_1_12.jpg" alt="Набір пастили" class="carousel-image">
+            <img src="../img/products/box/box_2_9.jpg" alt="Набір пастили 2" class="carousel-image">
+            <img src="../img/products/box/box_4_4.jpg" alt="Набір пастили 4" class="carousel-image">
+            <button class="carousel-btn prev">&#10094;</button>
+            <button class="carousel-btn next">&#10095;</button>
+        </div>
+        <h3>Ціна: 180 грн</h3>
+        <p>Натуральна домашня пастила на основі печерних яблук з додаванням фруктів та ягід.</p>
+        <p>Набір містить 54 цукерки, розподілені по 9 шт. у кожній секції.</p>
+        <a href="../cart.html" class="button" onclick="addToCart('Набір пастили S - 6 сек.', 180, 'img/products/box/box_3_6.jpg');">Додати до кошика</a>
+        <a href="../index.html" class="button">Назад до товарів</a>
+    </section>
+    <footer>
+        <p>&copy; Інтернет-магазин Пастили.</p>
+    </footer>
+    <script>
+      function toggleMenu() {
+    const menu = document.getElementById('mobileMenu');
+    menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+}
+    </script>
+</body>
+</html>

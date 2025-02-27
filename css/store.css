@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Vollkorn", serif;
+    color: #333;
+    font-style: normal;
+    width: 100%;
+    height: 100%;
+    background-color: #FFB6C1;
+
+}
+
+header {
+    background-color: #FFEFD5	;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: background-color 0.5s ease;
+}
+
+header:hover {
+    background-color: #FFE4B5;
+}
+
+header .logo {
+    padding-top: 5px;
+    font-size: 1.8em;
+    animation: fadeIn 1s ease-in-out;
+    display: flex;
+    align-items: center;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+    font-weight: 1000;
+}
+
+header nav ul li a:hover {
+    color: 	#C71585;
+}
+
+.network {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5px;
+    list-style-type:  none;
+}
+
+/* Ховаємо меню і кнопку-гамбургер на великих екранах */
+.hamburger {
+    display: none;
+    font-size: 35px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #333;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #DB7093;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #C71585;
+}
+
+#mobileMenu {
+    display: block;
+}
+
+/* Адаптивні стилі для мобільних пристроїв */
+@media (max-width: 768px) {
+    /* Показуємо кнопку-гамбургер */
+    .hamburger {
+        display: block;
+    }
+
+    /* Приховуємо меню за замовчуванням */
+    #mobileMenu {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #FFEFD5;
+        text-align: center;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Ставимо меню в стовпчик і налаштовуємо відступи */
+    #mobileMenu ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Стиль для елементів меню */
+    #mobileMenu ul li a {
+        color: black;
+        padding: 10px;
+        display: block;
+        text-decoration: none;
+    }
+
+    #mobileMenu ul li a:hover {
+        background-color: #FFDAB9;
+    }
+}
+
+.hero {
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-image: url("../img/slider/slide1_1550px.webp");
+    background-size: no-repeat;
+    background-position: center;
+    font-weight: 1000;
+}
+
+.hero-text h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    animation: textZoomIn 1s ease-in-out;
+}
+
+.hero-text p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+footer {
+    background-color: #FFEFD5;
+    color: black;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes textZoomIn {
+    0% {
+        transform: scale(0.8);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.products {
+    padding: 40px;
+    background-color: #FFB6C1;
+    text-align: center;
+    background-image: url("../img/bg/image-cm64qvvv.png");
+    background-size: no-repeat;
+    background-position: center;
+    font-weight: 500;
+}
+
+.products h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.product-item a {
+    color: black;
+    text-decoration: none;
+}
+
+.product-item {
+    display: inline-block;
+    width: 250px;
+    margin: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.product-item:hover {
+    transform: scale(1.05);
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product-item h3 {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+.product-item p {
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.product-item .button {
+   background-color: #DB7093;
+    color: white;
+    padding: 7px 7px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.product-item .button:hover {
+    background-color: #C71585;
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}

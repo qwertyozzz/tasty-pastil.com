@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0 !important;
+}
+
+body {
+    font-family: "Vollkorn", serif;
+    color: #333;
+    font-style: normal;
+    background-image: url("../img/bg/image-cm64qvvv.png");
+    background-size: no-repeat;
+    background-position: center;
+}
+
+.cart {
+    background-image: url("../img/bg/image-cm64qvvv.png");
+    background-size: no-repeat;
+    background-position: center;
+}
+
+/* Шапка сайта */
+header {
+    background-color: #FFEFD5	;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: background-color 0.5s ease;
+}
+
+header:hover {
+    background-color: #FFE4B5;
+}
+
+header .logo {
+    padding-top: 5px;
+    font-size: 1.8em;
+    animation: fadeIn 1s ease-in-out;
+    display: flex;
+    align-items: center;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+    font-weight: 1000;
+}
+
+header nav ul li a:hover {
+    color: 	#C71585;
+}
+
+.network {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5px;
+    list-style-type:  none;
+}
+
+/* Ховаємо меню і кнопку-гамбургер на великих екранах */
+.hamburger {
+    display: none;
+    font-size: 35px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 25px;
+    color: #333;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #DB7093;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #C71585;
+}
+
+#mobileMenu {
+    display: block;
+}
+
+/* Адаптивні стилі для мобільних пристроїв */
+@media (max-width: 768px) {
+    /* Показуємо кнопку-гамбургер */
+    .hamburger {
+        display: block;
+    }
+
+    /* Приховуємо меню за замовчуванням */
+    #mobileMenu {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #FFEFD5;
+        text-align: center;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Ставимо меню в стовпчик і налаштовуємо відступи */
+    #mobileMenu ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Стиль для елементів меню */
+    #mobileMenu ul li a {
+        color: black;
+        padding: 10px;
+        display: block;
+        text-decoration: none;
+    }
+
+    #mobileMenu ul li a:hover {
+        background-color: #FFDAB9;
+    }
+}
+
+/* Адаптив для кількості товара */
+@media (max-width: 768px) {
+    .cart-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+    }
+    
+    .cart-item-image img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    
+    .cart-item-info {
+        margin-bottom: 10px;
+    }
+    
+    .cart-item-controls {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+}
+
+/* Стилі для ПК */
+@media (min-width: 769px) {
+    .cart-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 15px;
+    }
+    
+    .cart-item-image img {
+        max-width: 120px;
+        height: auto;
+        margin-right: 15px;
+    }
+    
+    .cart-item-info {
+        flex-grow: 1;
+    }
+    
+    .cart-item-controls {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .cart-item-controls button {
+        border: none;
+        padding: 5px 10px;
+        font-size: 14px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+.cart-item-controls span {
+        background: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+
+}
+
+footer {
+    background-color: #FFEFD5;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes textZoomIn {
+    0% {
+        transform: scale(0.8);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+.cart {
+    padding: 40px;
+    background-color: #FFB6C1;
+    text-align: center;
+}
+
+.cart h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th, table td {
+    padding: 10px;
+    border: 3px solid black;
+    text-align: center;
+}
+
+.cart-summary {
+    margin-top: 20px;
+    font-size: 1.5em;
+}
+
+.cart-summary p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.button-link {
+    display: inline-block;
+    background-color: #DB7093;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 12px;
+    border: 0;
+}
+
+.button-link:hover {
+    background-color: #C71585;
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.button {
+    display: inline-block;
+    background-color: #DB7093;
+    color: white;
+    border: 0;
+    padding: 12px 20px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 15px;
+}
+
+.button:hover {
+    background-color: #C71585;
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* розподіл між елементами */
+    margin-bottom: 20px;
+    padding: 15px;
+    border-bottom: 3px solid #ddd;
+    flex-wrap: wrap;
+    text-align: center; /* для центрування тексту на мобільних */
+}
+
+.cart-item-image {
+    width: 100px; /* збільшено розмір зображення */
+    height: 100px; /* збільшено розмір зображення */
+    object-fit: cover;
+    margin-right: 20px;
+    border-radius: 8px; /* округлені кути для стилю */
+}
+
+.cart-item-name {
+    flex-grow: 1;
+    font-size: 1.2em; /* більший розмір шрифту для назви товару */
+    font-weight: bold;
+}
+
+.cart-item-price {
+    font-size: 22px;
+    color: #333;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.remove-button {
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 1em;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.remove-button:hover {
+    background-color: #c0392b;
+}
+
+#cart-total {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+@media (max-width: 480px) {
+    .cart-item {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+    
+    .cart-item-image {
+        width: 100px;
+        height: 70px;
+        margin: 0 0 10px 0;
+    }
+    
+    .cart-item-name,
+    .cart-item-price {
+        font-size: 0.9em;
+        margin-right: 0;
+    }
+    
+    .cart-item-price {
+        margin-top: 5px;
+    }
+
+    .remove-button {
+        padding: 6px 10px; /* ще менший розмір кнопки */
+        font-size: 0.8em; /* зменшення розміру шрифту */
+        margin-left: 5px;
+    }
+    .cart-item-controls button {
+        border: none;
+        padding: 5px 10px;
+        font-size: 14px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    .cart-item-controls span {
+        background: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+}
+
+@media (max-width: 768px) {
+    .cart-item {
+        padding: 10px;
+        justify-content: center; /* центр всієї секції */
+    }
+    
+    .cart-item-image {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .cart-item-name,
+    .cart-item-price {
+        font-size: 1em;
+    }
+
+    .remove-button {
+        padding: 8px 12px; /* трохи менше відступів */
+        font-size: 0.9em;
+        margin-left: 5px;
+    }
+    .cart-item-controls button {
+        border: none;
+        padding: 5px 10px;
+        font-size: 14px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+.cart-item-controls span {
+        background: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+}
+
