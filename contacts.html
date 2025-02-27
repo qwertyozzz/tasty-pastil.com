@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo/logo.png" type="image/x-icon">
+    <title>Tasty Pastil - Контакти</title>
+    <link rel="stylesheet" href="css/contacts.css">
+</head>
+<body>
+   <header>
+      <div class="logo">
+         <a href="index.html"><img src="img/logo/logo.png" alt="Логотип" width="70px"></a>
+        </div>
+        <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+        <nav id="mobileMenu">
+         <ul>
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="contacts.html">Контакти</a></li>
+            <li><a href="cart.html">Кошик</a></li>
+         </ul>
+        </nav>
+        <ul class="network">
+            <li><a href="https://www.facebook.com/profile.php?id=100005388401291" target="_blank"><img src="img/logo/facebook-48px.png" alt="Facebook"></a></li>
+            <li><a href="https://www.instagram.com/sabirova2502/" target="_blank"><img src="img/logo/instagram-48px.png" alt="Instagram"></a></li>
+        </ul>
+   </header>
+
+    <section class="contacts">
+        <h2>Контакти</h2>
+        <p>Телефон: +38 (096) 205-57-04</p>
+        <a href="https://www.facebook.com/profile.php?id=100005388401291" target="_blank"><img src="img/logo/facebook.png" alt="facebook" class="network_contacts">Facebook</a>
+        <a href="https://www.instagram.com/sabirova2502/" target="_blank"><img src="img/logo/instagram.png" alt="instagram" class="network_contacts">Instagram</a>
+        <h3>Залиште ваше повідомлення:</h3>
+        <form action="#" method="post">
+            <label for="name">Ваше ім'я:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Ваш Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Повідомлення:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit" class="button-link">Відправити</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; Інтернет-магазин Пастили.</p>
+    </footer>
+    <script>
+      function toggleMenu() {
+    const menu = document.getElementById('mobileMenu');
+    menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+}
+    </script>
+</body>
+</html>

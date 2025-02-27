@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="img/logo/logo.png" type="image/x-icon">
+   <link rel="stylesheet" href="css/store.css">
+   <script src="js/cart.js"></script>
+   <title>Tasty Pastil - Головна</title>
+</head>
+    <body>
+   <header>
+      <div class="logo">
+         <a href="index.html"><img src="img/logo/logo.png" alt="Логотип" width="70px"></a>
+        </div>
+        <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+        <nav id="mobileMenu">
+         <ul>
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="contacts.html">Контакти</a></li>
+            <li><a href="cart.html">Кошик</a></li>
+         </ul>
+        </nav>
+        <ul class="network">
+            <li><a href="https://www.facebook.com/profile.php?id=100005388401291" target="_blank"><img src="img/logo/facebook-48px.png" alt="Facebook"></a></li>
+            <li><a href="https://www.instagram.com/sabirova2502/" target="_blank"><img src="img/logo/instagram-48px.png" alt="Instagram"></a></li>
+        </ul>
+   </header>
+   <section class="hero">
+        <div class="hero-text">
+            <h2>Натуральна пастила для всієї родини!</h2>
+            <p>Смачні та корисні ласощі без цукру та консервантів.</p>
+        </div>
+    </section>
+    <section class="products">
+        <h2>Товари</h2>
+        <div class="product-item">
+         <a href="html/box_16.html"> <img src="img/products/box/boxXXL/boxXXL_1.webp" alt="Набір пастили"></a>
+            <a href="html/box_16.html"><h3>Набір пастили XXL - 16 сек.</h3></a>
+            <p>Ціна: 400 грн</p>
+            <a href="cart.html" class="button" onclick="addToCart('Набір пастили XXL - 16 сек.', 400, 'img/products/box/boxXXL/boxXXL_1.webp')">Додати до кошика</a>
+        </div>
+        <div class="product-item">
+         <a href="html/box_12.html"> <img src="img/products/box/box_1_12.jpg" alt="Набір пастили"></a>
+            <a href="html/box_12.html"><h3>Набір пастили XL - 12 сек.</h3></a>
+            <p>Ціна: 350 грн</p>
+            <a href="cart.html" class="button" onclick="addToCart('Набір пастили XL - 12 сек.', 350, 'img/products/box/box_1_12.jpg')">Додати до кошика</a>
+        </div>
+        <div class="product-item">
+         <a href="html/box_9.html"> <img src="img/products/box/box_2_9.jpg" alt="Набір пастили"></a>
+            <a href="html/box_9.html"><h3>Набір пастили L - 9 сек.</h3></a>
+            <p>Ціна: 250 грн</p>
+            <a href="cart.html" class="button" onclick="addToCart('Набір пастили L - 9 сек.', 250, 'img/products/box/box_2_9.jpg')">Додати до кошика</a>
+        </div>
+        <div class="product-item">
+         <a href="html/box_6.html"> <img src="img/products/box/box_3_6.jpg" alt="Набір пастили"></a>
+            <a href="html/box_12.html"><h3>Набір пастили S - 6 сек.</h3></a>
+            <p>Ціна: 180 грн</p>
+            <a href="cart.html" class="button" onclick="addToCart('Набір пастили S - 6 сек.', 180, 'img/products/box/box_3_6.jpg')">Додати до кошика</a>
+        </div>
+        <div class="product-item">
+         <a href="html/box_4.html"> <img src="img/products/box/box_4_4.jpg" alt="Набір пастили"></a>
+            <a href="html/box_12.html"><h3>Набір пастили XS - 4 сек.</h3></a>
+            <p>Ціна: 120 грн</p>
+            <a href="cart.html" class="button" onclick="addToCart('Набір пастили XS - 4 сек.', 120, 'img/products/box/box_4_4.jpg')">Додати до кошика</a>
+        </div>
+        <div class="product-item">
+            <a href="html/candy.html"><img src="img/products/candy/candy_2.jpg" alt="ППастила у вигляді цукерок"></a>
+            <a href="html/candy.html"><h3>Пастила у вигляді цукерок - 10 шт.</h3></a>
+            <p>Ціна: 100 грн</p>
+            <a href="cart.html" class="button" onclick="addToCart('Пастила у вигляді цукерок - 10 шт.', 100, 'img/products/candy/candy_2.jpg');">Додати до кошика</a>
+        </div>
+        <div class="product-item">
+            <a href="html/packet.html"><img src="img/products/packets/packet_1.jpg" alt="Пастила в зручній упаковці"></a>
+            <a href="html/packet.html"><h3>Пастила в зручній упаковці - 5 шт.</h3></a>
+            <p>Ціна: 60 грн</p>
+            <a href="cart.html" class="button" onclick="addToCart('Пастила в зручній упаковці - 5 шт.', 60, 'img/products/packets/packet_1.jpg')">Додати до кошика</a>
+        </div>
+        <div class="product-item">
+            <a href="html/flowers.html"><img src="img/products/flowers/flower1.webp" alt="Пастила у вигляді букета"></a>
+            <a href="html/flowers.html"><h3>Пастила у вигляді букета</h3></a>
+            <p>Ціна: 400 грн</p>
+            <a href="cart.html" class="button" onclick="addToCart('Пастила у вигляді букета', 400, 'img/products/flowers/flower1.webp')">Додати до кошика</a>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Інтернет-магазин Пастили.</p>
+    </footer>
+    <script>
+      function toggleMenu() {
+    const menu = document.getElementById('mobileMenu');
+    menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+}
+    </script>
+</body>
+</html>

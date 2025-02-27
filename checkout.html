@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo/logo.png" type="image/x-icon">
+    <title>Оформлення замовлення</title>
+    <link rel="stylesheet" href="css/checkout.css">
+    <script src="js/checkout.js"></script>
+</head>
+<body>
+<div class="container">
+    <h2>Оформлення замовлення</h2>
+    <form id="orderForm">
+        <div class="form-group">
+            <label for="name">Ф.І.О.</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="phone">Телефон</label>
+            <input type="tel" id="phone" name="phone" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email(необов'язково)</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="address">Адреса доставки</label>
+            <input type="text" id="address" name="address" required>
+        </div>
+        <div class="form-group">
+            <label for="notes">Примітки до замовлення</label>
+            <textarea id="notes" name="notes" rows="3"></textarea>
+        </div>
+        <!-- Підсумкова сума -->
+        <div class="order-summary">
+            <h3>Підсумок</h3>
+            <p>Всього до сплати: <span id="totalPrice">0 грн</span></p>
+            <button type="button" onclick="submitOrder()">Оформити замовлення</button>
+            <button class="button-back" onclick="goBack()">Назад</button>
+        </div>
+    </form>
+</div>
+<script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>
